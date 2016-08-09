@@ -1,0 +1,34 @@
+http://localhost/mikrotik/admin/login.php
+
+user= admin
+pass= 12345
+
+
+1.เปิด mikrotik/include/config.inc.php 
+
+   แก้ไข "localhost" เปลี่ยน hostnameให้เป็นของท่าน
+
+   แก้ไข  "root"     เปลี่ยน usernameให้เป็นของท่าน
+    
+   แก้ไข  "22222"    เปลี่ยน passwordให้เป็นของท่าน
+
+2.เปิด mikrotik/real-time/backup speed/key.php
+
+   แก้ไข   "172.0.0.1" ให้เป็นไอพี ที่เข้าmikrotik
+     
+
+    แก้ไข  "admin"      ให้เป็นusernameที่เข้าmikrotik
+         
+    แก้ไข   "2499"      ให้เป็นpasswordที่เข้าmikrotik
+
+    แล้ว copy มาวางทับ ที่  mikrotik/real-time/key.php จะทำให้ Log,uptime,user online,cpu,และอีกหลายฟังชั่น update ตลอด
+    หรือจะคืนค่าแบบเดิมก็ให้ copy file ใน mikrotik/real-time/backup slow/key.php มาทับ file เดิม
+
+
+
+##############ขอขอบคุณเจ้าของโปรแกรม API และ สคริปจากapi_mikrotik ที่เอามาแจกเพื่อให้ผมมีโอกาสได้นำมาปรับแต่งต่ออีก#######################
+ 
+
+
+
+
